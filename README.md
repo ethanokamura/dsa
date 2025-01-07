@@ -1,44 +1,43 @@
 # DSA Topics
 A list of DSA programs I have written in C++ during my time at Uni.
 
-# Introduction to DSA
-Part 0: Basics
-  Arrays
-  Vectors
-  Linear Search
-  Binary Search
-  Bubble Sort
-  Selection Sort
+## Part 0: Basics
+1. Arrays
+2. Vectors
+3. Linear Search
+4. Binary Search
+5. Bubble Sort
+6. Selection Sort
 
-Part 1: Linked Lists
-  Linked List
-  Stack (using composition)
-  Queue (using inheritance)
-  Hash Table
+## Part 1: Linked Lists
+1. Linked List
+2. Stack (using composition)
+3. Queue (using inheritance)
+4. Hash Table
 
-Part 1.5: Misc
-  Priority Queue (built with a Heap)
+## Misc
+1. Priority Queue (built with a Heap)
 
-Part 2: Basic Sorts
-  MergeSort
-  QuickSort
-  CountingSort
-  RadixSort
-  BucketSort
-  Radix-Bucket Sort
+## Part 2: Basic Sorts
+1. MergeSort
+2. QuickSort
+3. CountingSort
+4. RadixSort
+5. BucketSort
+6. Radix-Bucket Sort
 
-Part 3: Graph Structures
-  BST (Binary Search Tree)
-  Disjoint Set (Maze Generator)
-  MST (Minimum Spanning Tree)
+## Part 3: Graph Structures
+1. BST (Binary Search Tree)
+2. Disjoint Set (Maze Generator)
+3. MST (Minimum Spanning Tree)
   - Kruskal
   - Prim
 
-Part 4: Graph Algorithms
-  BFS (Breadth First Search)
-  DFS (Depth First Search)
-  SSSP (Single Source Shortest Path)
+## Part 4: Graph Algorithms
+1. BFS (Breadth First Search)
+2. DFS (Depth First Search)
+3. SSSP (Single Source Shortest Path)
   - Dijkstra
   - Bellman-Ford
-  APSP (All Pairs Shortest Path)
+4. APSP (All Pairs Shortest Path)
   - Floyd-Warshall
