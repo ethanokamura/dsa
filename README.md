@@ -15,9 +15,6 @@ A list of DSA programs I have written in C++ during my time at Uni.
 3. Queue (using inheritance)
 4. Hash Table
 
-## Misc
-1. Priority Queue (built with a Heap)
-
 ## Part 2: Basic Sorts
 1. MergeSort
 2. QuickSort
@@ -41,3 +38,6 @@ A list of DSA programs I have written in C++ during my time at Uni.
   - Bellman-Ford
 4. APSP (All Pairs Shortest Path)
   - Floyd-Warshall
+
+## Misc
+Priority Queue (built with a Heap)
