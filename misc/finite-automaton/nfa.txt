@@ -1,0 +1,10 @@
+nondeterministic
+states 5
+inputs 2
+start 0
+accepting 4 2
+transitions
+0 1 -1
+0 3 -1
+1 2 1
+3 4 0
