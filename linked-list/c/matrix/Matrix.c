@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file Matrix.c
  * @brief Implementation of Matrix ADT
  * @status: in progress

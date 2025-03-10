@@ -1,7 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 7 [p7]
+ * @author Ethan Okamura
  * @file binary_search_tree.cpp
  * @brief implementing member functions for the binary search tree
  * @note used smart pointers to take care of deleting my int*

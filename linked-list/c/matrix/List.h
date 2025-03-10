@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file List.h
  * @brief Header file for List ADT
  * @status: working / tested

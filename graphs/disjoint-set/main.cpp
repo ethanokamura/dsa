@@ -1,7 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 6 [p6]
+ * @author Ethan Okamura
  * @file main.cpp
  * @brief created a random maze of n*n size using a disjoint set
  * @status: working / tested

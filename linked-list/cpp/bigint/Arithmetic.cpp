@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file Arithmetic.cpp
  * @brief Perform a gauntlet of arithmetic
  *        operations on a BigInteger ADT

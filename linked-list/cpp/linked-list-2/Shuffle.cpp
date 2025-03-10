@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file Shuffle.cpp
  * @brief Performs a perfect shuffle using the List ADT
  */

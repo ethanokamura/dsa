@@ -2,9 +2,7 @@
 #define DISJOINT_SET_H
 
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 6 [p6]
+ * @author Ethan Okamura
  * @file disjoint_set.h
  * @brief declaring the member functions and variables for the union find
  * structure

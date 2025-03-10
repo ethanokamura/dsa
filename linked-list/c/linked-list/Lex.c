@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file Lex.c
  * @brief Main file for List ADT. Performs insertion sort
  * @status: working / tested

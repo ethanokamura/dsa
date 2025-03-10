@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file Dictionary.cpp
  * @brief Implementation of Dictionary ADT
  * @status: working / tested

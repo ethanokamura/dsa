@@ -2,8 +2,7 @@
 #define LINKED_LIST_H
 
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
+ * @author Ethan Okamura
  * @file linked_list.h
  * @brief creates a simple linked list!
  */

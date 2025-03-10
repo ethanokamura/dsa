@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file Graph.h
  * @implements Graph ADT
  * @note program is required to maintain these lists in sorted order by

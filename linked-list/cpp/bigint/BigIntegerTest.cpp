@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file BigIntegerTest.cpp
  * @brief Main testing file BigInteger ADT
  * @status: working / tested

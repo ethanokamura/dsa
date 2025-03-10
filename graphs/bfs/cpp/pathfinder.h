@@ -2,9 +2,7 @@
 #define PATHFIND_H
 
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 8 [p8]
+ * @author Ethan Okamura
  * @file pathfinder.h
  * @brief declaring the member functions and variables for
  *        the path finder class

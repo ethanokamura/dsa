@@ -1,7 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 2 [p2]
+ * @author Ethan Okamura
  * @file minimum_heap.cpp
  * @brief implimenting pulbic member functions
  *        creating the heap && queue

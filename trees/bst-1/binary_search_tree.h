@@ -2,9 +2,7 @@
 #define BINARY_SEARCH_TREE_H
 
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 7 [p7]
+ * @author Ethan Okamura
  * @file binary_search_tree.h
  * @brief declaring the member functions and variables for
  *        the binary tree class

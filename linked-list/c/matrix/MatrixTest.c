@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file MatrixTest.c
  * @brief Performs tests on the defined methods in the Matrix ADT.
  */

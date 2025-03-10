@@ -2,9 +2,7 @@
 #define PRIORITY_QUEUE_H
 
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 2 [p2]
+ * @author Ethan Okamura
  * @file minimum_heap.h
  * @brief defining member functions and variables
  *        creating the heap && queue

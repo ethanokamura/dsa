@@ -1,7 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 4 [p4]
+ * @author Ethan Okamura
  * @file main.cpp
  * @brief created a hybrid of radix and bucket sort
  * @status: working / tested

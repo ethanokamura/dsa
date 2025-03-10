@@ -1,7 +1,5 @@
 /**
  * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 9 [p9]
  * @file find_paths.h
  * @brief declaring the member functions and variables for
  *        the find paths class

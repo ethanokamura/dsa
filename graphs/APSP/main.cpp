@@ -1,7 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 9 [p9]
+ * @author Ethan Okamura
  * @file main.cpp
  * @brief created a program to find the shortest path from
  *        all pairs of verticies in a weighted, directed graph

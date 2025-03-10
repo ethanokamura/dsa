@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file ListTest.cpp
  * @brief Main testing file List ADT
  * @status: working / tested

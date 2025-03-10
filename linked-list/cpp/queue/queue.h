@@ -2,9 +2,7 @@
 #define QUEUE_H
 
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 8 [p8]
+ * @author Ethan Okamura
  * @file queue.h
  * @brief creates a simple queue class!
  */

@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file DictionaryTest.cpp
  * @brief Main testing file for Dictionary ADT.
  */

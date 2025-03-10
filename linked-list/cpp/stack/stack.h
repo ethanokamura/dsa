@@ -2,8 +2,7 @@
 #define STACK_H
 
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
+ * @author Ethan Okamura
  * @file stack.h
  * @brief creates a simple stack class!
  */

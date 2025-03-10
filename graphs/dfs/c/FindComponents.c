@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file FindComponents.c
  * @brief Find the strongly connected components in a directed Graph ADT.
  */

@@ -1,7 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 3 [p3]
+ * @author Ethan Okamura
  * @file main.cpp
  * @brief created a quicksort algorithm using lomuto's technique
  * @status: working / tested

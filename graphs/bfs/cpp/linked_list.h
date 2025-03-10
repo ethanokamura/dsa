@@ -2,8 +2,7 @@
 #define LINKED_LIST_H
 
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
+ * @author Ethan Okamura
  * @file linked_list.h
  * @brief creates a simple linked list!
  */
@@ -33,7 +32,7 @@ class LinkedList {
   // destructor
   ~LinkedList() {
     Node *current = head;
-    while (current) {
+    while (current != nullptr) {
       Node *next = current->next;
       delete current;
       current = next;
@@ -48,13 +47,13 @@ class LinkedList {
 
   // returns the value of the head node
   T &front() const {
-    if (!head) throw std::domain_error("empty list!");
+    if (head == nullptr) throw std::domain_error("empty list!");
     return head->data;
   }
 
   // returns the value of the tail node
   T &back() const {
-    if (!tail) throw std::domain_error("empty list!");
+    if (tail == nullptr) throw std::domain_error("empty list!");
     return tail->data;
   }
 
@@ -62,7 +61,7 @@ class LinkedList {
   std::size_t size() const { return list_size; }
 
   // returns true if list is empty
-  bool empty() const { return !head; }
+  bool empty() const { return head == nullptr; }
 
   // adds a new element (val)
   // assigns new element as head
@@ -97,7 +96,7 @@ class LinkedList {
     Node *temp = head;
     head = head->next;
     delete temp;
-    if (!head) tail = nullptr;
+    if (head == nullptr) tail = nullptr;
     list_size--;
   }
 
@@ -105,14 +104,14 @@ class LinkedList {
   // reassigns new head
   void pop_back() {
     if (empty()) throw std::domain_error("empty list!");
-    if (!head->next) {
+    if (head->next == nullptr) {
       delete head;
       head = tail = nullptr;
       list_size--;
       return;
     }
     Node *current = head;
-    while (current->next->next) current = current->next;
+    while (current->next->next != nullptr) current = current->next;
     delete current->next;
     current->next = nullptr;
     tail = current;
@@ -146,9 +145,9 @@ class LinkedList {
       return;
     }
     Node *current = head;
-    while (current->next && current->next->data != target)
+    while (current->next != nullptr && current->next->data != target)
       current = current->next;
-    if (current->next) {
+    if (current->next != nullptr) {
       Node *temp = current->next;
       current->next = current->next->next;
       list_size--;
@@ -158,24 +157,12 @@ class LinkedList {
 
   // function to remove all occurrences of a value from the linked list
   void remove_all(const T &target) {
-    Node *current = head;
-    Node *prev = nullptr;
-    while (current) {
-      if (current->data == target) {
-        Node *temp = current;
-        if (!prev)
-          head = current->next;
-        else
-          prev->next = current->next;
-        current = current->next;
-        delete temp;
-        list_size--;
-      } else {
-        prev = current;
-        current = current->next;
+    for (std::size_t i = 0; i < size(); i++) {
+      if ((*this)[i] == target) {
+        remove(target);
+        --i;
       }
     }
-    if (prev) tail = prev;
   }
 
   // reverse the order of elements
@@ -189,18 +176,13 @@ class LinkedList {
       prev = cur;
       cur = next;
     }
-    Node *temp = head;
     head = prev;
-    tail = temp;
   }
 
   // check if a value exists in the linked list
   bool contains(const T &target) const {
-    Node *current = head;
-    while (current) {
-      if (current->data == target) return true;
-      current = current->next;
-    }
+    for (std::size_t i = 0; i < size(); ++i)
+      if ((*this)[i] == target) return true;
     return false;
   }
 
@@ -215,7 +197,7 @@ class LinkedList {
   LinkedList &operator=(const LinkedList &another) {
     Node *current = another.head;
     clear();
-    while (current) {
+    while (current != nullptr) {
       push_back(current->data);
       current = current->next;
     }
@@ -225,13 +207,8 @@ class LinkedList {
   // checks list for equivalency to another list
   bool operator==(const LinkedList &another) {
     if (size() != another.size()) return false;
-    Node *current = head;
-    Node *other = another.head;
-    while (current) {
-      if (other->data != current->data) return false;
-      current = current->next;
-      other = other->next;
-    }
+    for (int i = 0; i < size(); i++)
+      if (another[i] != (*this)[i]) return false;
     return true;
   }
 
@@ -248,14 +225,10 @@ class LinkedList {
 
   // allows stdout of list
   friend std::ostream &operator<<(std::ostream &out, const LinkedList &list) {
-    Node *current = list.head;
-    int index = 0;
     out << '[';
-    while (current) {
-      out << current->data;
-      if (index < list.size() - 1) out << ", ";
-      index++;
-      current = current->next;
+    for (size_t i = 0; i < list.size(); i++) {
+      out << list[i];
+      if (i < list.size() - 1) out << ", ";
     }
     out << ']';
     return out;

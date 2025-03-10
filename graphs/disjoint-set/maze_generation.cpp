@@ -1,7 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 6 [p6]
+ * @author Ethan Okamura
  * @file maze_generation.cpp
  * @brief implimenting member functions for the MazeGeneration class
  *

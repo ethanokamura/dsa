@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file Order.cpp
  * @brief Inserts key-value pairs and displays the Dictionary ADT.
  */

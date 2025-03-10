@@ -1,7 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 6 [p6]
+ * @author Ethan Okamura
  * @file disjoint_set.cpp
  * @brief implimenting member functions for my disjoint set
  */

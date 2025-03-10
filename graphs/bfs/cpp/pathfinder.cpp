@@ -1,7 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 8 [p8]
+ * @author Ethan Okamura
  * @file pathfinder.cpp
  * @brief implementing member functions for the path finder class
  */

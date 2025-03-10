@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file List.h
  * @brief Header file for List ADT
  * @status: working / tested
@@ -13,7 +12,7 @@
 #define List_H_INCLUDE_
 
 // Exported types -------------------------------------------------------------
-typedef int ListElement;
+typedef long ListElement;
 
 class List {
  private:
@@ -21,17 +20,17 @@ class List {
   struct Node {
     // Node fields
     ListElement data;
-    Node* next;
-    Node* prev;
+    Node *next;
+    Node *prev;
     // Node constructor
     Node(ListElement x);
   };
 
   // List fields
-  Node* frontDummy;
-  Node* backDummy;
-  Node* beforeCursor;
-  Node* afterCursor;
+  Node *frontDummy;
+  Node *backDummy;
+  Node *beforeCursor;
+  Node *afterCursor;
   int pos_cursor;
   int num_elements;
 
@@ -42,7 +41,7 @@ class List {
   List();
 
   // Copy constructor.
-  List(const List& L);
+  List(const List &L);
 
   // Destructor
   ~List();
@@ -160,7 +159,7 @@ class List {
   // concat()
   // Returns a new List consisting of the elements of this List, followed by
   // the elements of L. The cursor in the returned List will be at postion 0.
-  List concat(const List& L) const;
+  List concat(const List &L) const;
 
   // to_string()
   // Returns a string representation of this List consisting of a comma
@@ -170,22 +169,22 @@ class List {
   // equals()
   // Returns true if and only if this List is the same integer sequence as R.
   // The cursors in this List and in R are unchanged.
-  bool equals(const List& R) const;
+  bool equals(const List &R) const;
 
   // Overriden Operators -----------------------------------------------------
 
   // operator<<()
   // Inserts string representation of L into stream.
-  friend std::ostream& operator<<(std::ostream& stream, const List& L);
+  friend std::ostream &operator<<(std::ostream &stream, const List &L);
 
   // operator==()
   // Returns true if and only if A is the same integer sequence as B. The
   // cursors in both Lists are unchanged.
-  friend bool operator==(const List& A, const List& B);
+  friend bool operator==(const List &A, const List &B);
 
   // operator=()
   // Overwrites the state of this List with state of L.
-  List& operator=(const List& L);
+  List &operator=(const List &L);
 };
 
 #endif

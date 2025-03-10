@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
+ * @author Ethan Okamura
  * @file main.cpp
  * @brief created a priority queue using a minimum heap (holding ints)
  */

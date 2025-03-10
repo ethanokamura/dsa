@@ -1,6 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: eokamura@ucsc.edu
+ * @author Ethan Okamura
  * @file FindPath.c
  * @brief use the Graph ADT to find shortest paths between pairs of vertices
  * @param input_file the file name for the input file

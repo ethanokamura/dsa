@@ -1,7 +1,5 @@
 /**
- * @author Ethan Okamura (eokamura)
- * @email: ethanokamura3@gmail.com
- * @assignment: Programming Assignment 9 [p9]
+ * @author Ethan Okamura
  * @file find_paths.cpp
  * @brief implementing member functions for the find paths class
  */
