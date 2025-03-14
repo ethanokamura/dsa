@@ -1,5 +1,3 @@
-# Programming Assignment 2:
-
 This program implements breadth first search using an adjacency list constructed from a Linked List
 
 ## How it works:
@@ -11,7 +9,7 @@ This program implements breadth first search using an adjacency list constructed
 ## Directory:
 
 ```
-pa2/
+bfs/c/
   ├── FindPath.c   # containing the primary logic for the program
   ├── Graph.c      # implements the graph ADT and inner structures
   ├── Graph.h      # defines the graph structure

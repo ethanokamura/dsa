@@ -1,5 +1,3 @@
-# Programming Assignment 4:
-
 This program implements an nxn Matrix. With these strutures, we perform basic Matrix manipulation procedures.
 
 ## How it works:
@@ -10,7 +8,7 @@ This program implements an nxn Matrix. With these strutures, we perform basic Ma
 ## Directory:
 
 ```
-pa4/
+matrix/
   ├── Sparse.c      # containing the primary logic for the program
   ├── Matrix.c      # implements the Matrix ADT and inner structures
   ├── Matrix.h      # defines the Matrix structure and related methods

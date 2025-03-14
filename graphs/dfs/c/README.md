@@ -1,5 +1,3 @@
-# Programming Assignment 3:
-
 This program finds a Graph ADT's strongly connected components using depth first search and transposition with a series of adjacency lists constructed from an array of doubly Linked Lists.
 
 ## How it works:
@@ -15,7 +13,7 @@ This program finds a Graph ADT's strongly connected components using depth first
 ## Directory:
 
 ```
-pa3/
+dfs/c/
   ├── FindComponents.c  # containing the primary logic for the program
   ├── Graph.c           # implements the graph ADT and inner structures
   ├── Graph.h           # defines the graph structure

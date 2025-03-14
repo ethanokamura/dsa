@@ -1,5 +1,3 @@
-# Programming Assignment 1:
-
 This program implements a Doubly Linked List.
 
 ## How it works:
@@ -11,7 +9,7 @@ This program implements a Doubly Linked List.
 ## Directory:
 
 ```
-pa1/
+linked-list/
   ├── Lex.c       # containing the primary logic for the program
   ├── List.c      # implements the doubly linked list and inner nodes
   ├── List.h      # defines the doubly linked list
