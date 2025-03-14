@@ -1,5 +1,3 @@
-# Programming Assignment 8:
-
 This program implements a Dictionary ADT using a Red Black Tree allowing for optimal insertions and lookups.
 
 ## How it works:
@@ -11,7 +9,7 @@ This program implements a Dictionary ADT using a Red Black Tree allowing for opt
 ## Directory:
 
 ```
-pa8/
+rbt/
   ├── Dictionary.cpp      # implements the Dictionary ADT and inner structures
   ├── Dictionary.h        # defines the Dictionary structure and related methods
   ├── DictionaryTest.cpp  # tests the provided functions required to implement the Dictionary ADT
@@ -24,87 +22,18 @@ pa8/
 ## Tests:
 For `DictionaryTest.cpp`, I ran a series of tests that covered all of the defined methods within `Dictionary.cpp`. I created a bash script to run a series of inputs and compared to the expected outputs to ensure the results were as expected.
 
+To run the tests, type the following commands:
+
+For testing `Order.cpp`
 ```sh
-#!/bin/bash
-make DictionaryTest
-
-for i in "$@"; do  # Loop over all arguments passed to the script
-  # Define file paths
-  INPUT_FILE="../data/pa8/in$i.txt"
-  # Run Sparse and save the output to out.txt
-  echo "Running data/$INPUT_FILE"
-
-  valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all -s ./DictionaryTest "$INPUT_FILE"
-done
-
-make clean
+chmod +x ./tests/main_test.sh
+./tests/main_test.sh 1 2 3 4 5 6
 ```
 
-For `Order.cpp`, I created a bash script to run a series of inputs and compared to the expected outputs to ensure the results were as expected.
+For testing `WordFrequency.cpp`
 ```sh
-#!/bin/bash
-make
-
-for i in "$@"; do  # Loop over all arguments passed to the script
-  # Define file paths
-  INPUT_FILE="../data/pa8/in$i.txt"
-  EXPECTED_OUTPUT="../data/pa8/out$i.txt"
-  ACTUAL_OUTPUT="../data/pa8/out.txt"
-
-  # Run Sparse and save the output to out.txt
-  echo "Running data/$INPUT_FILE"
-
-  valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all -s ./Order "$INPUT_FILE" "$ACTUAL_OUTPUT"
-
-  # Compare output with expected output using diff -Z
-  if [ -f "$EXPECTED_OUTPUT" ]; then
-    echo "Comparing output of $ACTUAL_OUTPUT with $EXPECTED_OUTPUT"
-    diff -Z "$ACTUAL_OUTPUT" "$EXPECTED_OUTPUT"
-
-    if [ $? -eq 0 ]; then
-      echo "✅ Test passed: Output matches expected output!"
-    else
-      echo "❌ Test failed: Differences found."
-    fi
-  else
-    echo "⚠️ Warning: Expected output file '$EXPECTED_OUTPUT' not found!"
-  fi
-done
-
-make clean
-```
-
-```sh
-#!/bin/bash
-make
-
-for i in "$@"; do  # Loop over all arguments passed to the script
-  # Define file paths
-  INPUT_FILE="../data/pa8/in$i.txt"
-  EXPECTED_OUTPUT="../data/pa8/out$i.txt"
-  ACTUAL_OUTPUT="../data/pa8/out.txt"
-
-  # Run Sparse and save the output to out.txt
-  echo "Running data/$INPUT_FILE"
-
-  valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all -s ./WordFrequency "$INPUT_FILE" "$ACTUAL_OUTPUT"
-
-  # Compare output with expected output using diff -Z
-  if [ -f "$EXPECTED_OUTPUT" ]; then
-    echo "Comparing output of $ACTUAL_OUTPUT with $EXPECTED_OUTPUT"
-    diff -Z "$ACTUAL_OUTPUT" "$EXPECTED_OUTPUT"
-
-    if [ $? -eq 0 ]; then
-      echo "✅ Test passed: Output matches expected output!"
-    else
-      echo "❌ Test failed: Differences found."
-    fi
-  else
-    echo "⚠️ Warning: Expected output file '$EXPECTED_OUTPUT' not found!"
-  fi
-done
-
-make clean
+chmod +x ./tests/wf_test.sh
+./tests/wf_test.sh 1 2 3
 ```
 
 ## Speed of Program:

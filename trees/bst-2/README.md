@@ -1,7 +1,3 @@
-# Programming Assignment 7:
-
-This program implements a Dictionary ADT using a Binary Search Tree allowing for fast insertions and lookups.
-
 ## How it works:
 1. Assembles the `Dictionary` ADT.
 2. Inserts keys with their original index as values into the `Dictionary`.
@@ -10,7 +6,7 @@ This program implements a Dictionary ADT using a Binary Search Tree allowing for
 ## Directory:
 
 ```
-pa7/
+bst-2/
   ├── Dictionary.cpp      # implements the Dictionary ADT and inner structures
   ├── Dictionary.h        # defines the Dictionary structure and related methods
   ├── DictionaryTest.cpp  # tests the provided functions required to implement the Dictionary ADT
@@ -23,53 +19,14 @@ pa7/
 For `DictionaryTest.cpp`, I ran a series of tests that covered all of the defined methods within `Dictionary.cpp`. I created a bash script to run a series of inputs and compared to the expected outputs to ensure the results were as expected.
 
 ```sh
-#!/bin/bash
-make DictionaryTest
-
-for i in "$@"; do  # Loop over all arguments passed to the script
-  # Define file paths
-  INPUT_FILE="../data/pa7/in$i.txt"
-  # Run Sparse and save the output to out.txt
-  echo "Running data/$INPUT_FILE"
-
-  valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all -s ./DictionaryTest "$INPUT_FILE"
-done
-
-make clean
+chmod +x ./tests/test_tester.sh
+./tests/test_tester.sh 1 2 3
 ```
 
 For `Order.cpp`, I created a bash script to run a series of inputs and compared to the expected outputs to ensure the results were as expected.
 ```sh
-#!/bin/bash
-make
-
-for i in "$@"; do  # Loop over all arguments passed to the script
-  # Define file paths
-  INPUT_FILE="../data/pa7/in$i.txt"
-  EXPECTED_OUTPUT="../data/pa7/out$i.txt"
-  ACTUAL_OUTPUT="../data/pa7/out.txt"
-
-  # Run Sparse and save the output to out.txt
-  echo "Running data/$INPUT_FILE"
-
-  valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all -s ./Order "$INPUT_FILE" "$ACTUAL_OUTPUT"
-
-  # Compare output with expected output using diff -Z
-  if [ -f "$EXPECTED_OUTPUT" ]; then
-    echo "Comparing output of $ACTUAL_OUTPUT with $EXPECTED_OUTPUT"
-    diff -Z "$ACTUAL_OUTPUT" "$EXPECTED_OUTPUT"
-
-    if [ $? -eq 0 ]; then
-      echo "✅ Test passed: Output matches expected output!"
-    else
-      echo "❌ Test failed: Differences found."
-    fi
-  else
-    echo "⚠️ Warning: Expected output file '$EXPECTED_OUTPUT' not found!"
-  fi
-done
-
-make clean
+chmod +x ./tests/test_main.sh
+./tests/test_main.sh 1 2 3
 ```
 
 ## Speed of Program:
